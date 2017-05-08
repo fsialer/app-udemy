@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <header>
+    <h3 class="center-align">PRODUCTOS DE ANGULAR</h3>
+  </header>
+  <nav>
+    <ul>
+      <li><a [routerLink]="['/home']" [routerLinkActive]="['activado']">HOME</a></li>
+      <li><a [routerLink]="['/productos']" [routerLinkActive]="['activado']">PRODUCTOS</a></li>
+      <li><a [routerLink]="['/productos/crear-producto']" [routerLinkActive]="['activado']">CREAR PRODUCTO</a></li>
+    </ul>
+  </nav>
+  <main>
+    <router-outlet> </router-outlet>
+  </main>
+  <footer>
+    <span>Fernando Sialer - Web Developer</span>
+  </footer>
+</div>
